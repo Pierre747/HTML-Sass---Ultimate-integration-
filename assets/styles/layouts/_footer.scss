@@ -1,0 +1,115 @@
+footer {
+  background: url(../img/bg-footer.jpg) center/cover;
+  color: $white;
+  transform: translateY(-60%);
+  text-align: left;
+  padding: 65px 32px;
+  margin-bottom: -3500px;
+  
+  @media screen and (max-width: 550px) {
+    background: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: $sizemax2;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media screen and (max-width: 550px) {
+      grid-template-columns: 1fr;
+      margin-top: 70px;
+    }
+
+
+    .left-part {
+      padding-right: 30px;
+      line-height: 30px;
+
+      @media screen and (max-width: 550px) {
+        display: none;
+      }
+    
+      h2 {
+        font-family: $font1;
+        font-size: 3rem;
+        font-weight: 100;
+        color: $gold;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: $grey;
+      }
+    }
+
+    .right-part {
+      padding-left: 50px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+
+      @media screen and (max-width: 550px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-left: 0;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .follow {
+        @media screen and (max-width: 550px) {
+          display: none;
+        }
+      }
+
+      input {
+        margin-top: 15px;
+        background: none;
+        border: 1px solid $gold;
+        padding: 7px 13px;
+        width: 250px;
+        color: $grey;
+
+        @media screen and (max-width: 650px){
+          width: 190px;
+        }
+
+        @media screen and (max-width: 650px){
+          width: 300px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .second-element {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 80%;
+
+          @media screen and (max-width: 550px) {
+            width: 100%;
+          }
+          
+          li {
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

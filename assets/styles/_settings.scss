@@ -1,0 +1,78 @@
+//~ --------------------IMPORT FONTS-----------------------------
+
+@font-face {
+  font-family: "allura";
+  src: url("../fonts/Allura-Regular.ttf");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
+//~ ---------------------VARIABLES-------------------------------
+
+//& Fonts 🅰️
+
+$font1: allura, cursive;
+$font2: poppins, sans-serif;
+$font3: roboto, sans-serif;
+
+//& Size 📐
+
+$sizemax: 1600px;
+$sizemax2: 1000px;
+
+//& Colors 🎨
+
+$white: #eee;
+$black: #21201e;
+$grey: rgb(182,182,182);
+$gold: rgb(166,114,69);
+
+
+//~ ----------------------MIXINS---------------------------------
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin imgEffect {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+//~ -------------------GENERAL SETTINGS--------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  text-align: center;
+  font-family: $font3;
+  background: $black;
+}
+
+a, a:visited  {
+  text-decoration: none;
+  color: $black;
+}
